@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.n7.petriNet/src" modelPluginID="fr.n7.petriNet"
+    modelName="PetriNet" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>petriNet.ecore</foreignModel>
+  <genPackages prefix="PetriNet" disposableProviderFactory="true" ecorePackage="petriNet.ecore#/">
+    <genClasses ecoreClass="petriNet.ecore#//PetriNet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//PetriNet/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference petriNet.ecore#//PetriNet/petrinetelement"/>
+    </genClasses>
+    <genClasses ecoreClass="petriNet.ecore#//PetriNetElement"/>
+    <genClasses ecoreClass="petriNet.ecore#//Node">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Node/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference petriNet.ecore#//Node/linksToSuccessor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference petriNet.ecore#//Node/linksToPredecessor"/>
+    </genClasses>
+    <genClasses ecoreClass="petriNet.ecore#//Arc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Arc/tokensNb"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Arc/readOnly"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference petriNet.ecore#//Arc/predecessor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference petriNet.ecore#//Arc/successor"/>
+    </genClasses>
+    <genClasses ecoreClass="petriNet.ecore#//Place">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Place/marking"/>
+    </genClasses>
+    <genClasses ecoreClass="petriNet.ecore#//Transition"/>
+  </genPackages>
+</genmodel:GenModel>

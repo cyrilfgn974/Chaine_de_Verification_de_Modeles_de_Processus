@@ -1,0 +1,126 @@
+/**
+ */
+package simplepdl.impl;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+
+import simplepdl.Guidance;
+import simplepdl.ProcessElement;
+import simplepdl.SimplepdlPackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Guidance</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link simplepdl.impl.GuidanceImpl#getElement <em>Element</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class GuidanceImpl extends ProcessElementImpl implements Guidance {
+	/**
+	 * The cached value of the '{@link #getElement() <em>Element</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getElement()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList element;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected GuidanceImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected EClass eStaticClass() {
+		return SimplepdlPackage.Literals.GUIDANCE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList getElement() {
+		if (element == null) {
+			element = new EObjectResolvingEList(ProcessElement.class, this, SimplepdlPackage.GUIDANCE__ELEMENT);
+		}
+		return element;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case SimplepdlPackage.GUIDANCE__ELEMENT:
+				return getElement();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case SimplepdlPackage.GUIDANCE__ELEMENT:
+				getElement().clear();
+				getElement().addAll((Collection)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case SimplepdlPackage.GUIDANCE__ELEMENT:
+				getElement().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case SimplepdlPackage.GUIDANCE__ELEMENT:
+				return element != null && !element.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //GuidanceImpl

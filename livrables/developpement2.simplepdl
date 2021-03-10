@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simplepdl="http://simplepdl" name="developpement">
+  <processelement xsi:type="simplepdl:WorkDefinition" linksToSuccessors="//@processelement.4 //@processelement.5 //@processelement.6" name="Conception">
+    <besoin ressource="//@processelement.10">
+      <quantite>2</quantite>
+    </besoin>
+    <besoin ressource="//@processelement.12">
+      <quantite>2</quantite>
+    </besoin>
+  </processelement>
+  <processelement xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processelement.4" name="RedactionDoc">
+    <besoin ressource="//@processelement.10">
+      <quantite>1</quantite>
+    </besoin>
+    <besoin ressource="//@processelement.8">
+      <quantite>1</quantite>
+    </besoin>
+  </processelement>
+  <processelement xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processelement.5" linksToSuccessors="//@processelement.7" name="Programmation">
+    <besoin ressource="//@processelement.9">
+      <quantite>2</quantite>
+    </besoin>
+    <besoin ressource="//@processelement.10">
+      <quantite>3</quantite>
+    </besoin>
+  </processelement>
+  <processelement xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processelement.6 //@processelement.7" name="RedactionTests">
+    <besoin ressource="//@processelement.10">
+      <quantite>2</quantite>
+    </besoin>
+    <besoin ressource="//@processelement.11">
+      <quantite>1</quantite>
+    </besoin>
+  </processelement>
+  <processelement xsi:type="simplepdl:WorkSequence" predecessor="//@processelement.0" successor="//@processelement.1"/>
+  <processelement xsi:type="simplepdl:WorkSequence" linkType="finishToStart" predecessor="//@processelement.0" successor="//@processelement.2"/>
+  <processelement xsi:type="simplepdl:WorkSequence" predecessor="//@processelement.0" successor="//@processelement.3"/>
+  <processelement xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processelement.2" successor="//@processelement.3"/>
+  <processelement xsi:type="simplepdl:Ressource" nom="redacteur" besoin="//@processelement.1/@besoin.1">
+    <quantite>1</quantite>
+  </processelement>
+  <processelement xsi:type="simplepdl:Ressource" nom="developpeur" besoin="//@processelement.2/@besoin.0">
+    <quantite>2</quantite>
+  </processelement>
+  <processelement xsi:type="simplepdl:Ressource" nom="machine" besoin="//@processelement.0/@besoin.0 //@processelement.1/@besoin.0 //@processelement.2/@besoin.1 //@processelement.3/@besoin.0">
+    <quantite>4</quantite>
+  </processelement>
+  <processelement xsi:type="simplepdl:Ressource" nom="testeur" besoin="//@processelement.3/@besoin.1">
+    <quantite>2</quantite>
+  </processelement>
+  <processelement xsi:type="simplepdl:Ressource" nom="concepteur" besoin="//@processelement.0/@besoin.1"/>
+</simplepdl:Process>

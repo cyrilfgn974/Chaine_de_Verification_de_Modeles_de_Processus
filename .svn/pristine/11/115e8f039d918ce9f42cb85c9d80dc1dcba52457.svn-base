@@ -1,0 +1,29 @@
+import 'PetriNet.ecore'
+
+package PetriNet
+
+context PetriNet
+inv nomValide('Nom invalide: ' + self.name):   -- la taille du nom doit etre d'au moins 2 caractères
+	self.name.size() >= 2
+inv compositionNom('Nom invalide: ' + self.name):    -- le nom d’une activité ne doit être composé que de lettres, chiffres ou soulignés, un chiffre ne peut pas être première position.
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+inv nomUnique : self.petrinetelement   
+	->select(pe | pe.oclIsKindOf(Node))
+	->collect(pe | pe.oclAsType(Node))
+	->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)	
+	
+context Node
+inv nomValide('Nom invalide: ' + self.name):   -- la taille du nom doit etre d'au moins 2 caractères
+	self.name.size() >= 2
+
+context Arc
+inv positiveToken('Token invalide '):
+	self.tokensNb > 0
+inv nonReflexif : self.predecessor <> self.successor
+
+context Place
+inv positiveMarking('Marking invalide'):
+	self.marking >= 0	
+
+
+endpackage

@@ -1,0 +1,17 @@
+tr Conception_start Conception_notStarted machine?2 concepteur?2 -> Conception_started Conception_inProgress
+tr Conception_finish Conception_inProgress -> Conception_finished machine*2 concepteur*2
+tr RedactionDoc_start RedactionDoc_notStarted Conception_started?1 machine?1 redacteur?1 -> RedactionDoc_started RedactionDoc_inProgress
+tr RedactionDoc_finish RedactionDoc_inProgress -> RedactionDoc_finished machine redacteur
+tr Programmation_start Programmation_notStarted Conception_finished?1 developpeur?2 machine?3 -> Programmation_started Programmation_inProgress
+tr Programmation_finish Programmation_inProgress -> Programmation_finished developpeur*2 machine*3
+tr RedactionTests_start RedactionTests_notStarted Conception_started?1 machine?2 testeur?1 -> RedactionTests_started RedactionTests_inProgress
+tr RedactionTests_finish RedactionTests_inProgress Programmation_finished?1 -> RedactionTests_finished machine*2 testeur
+pl Conception_notStarted (1)
+pl RedactionDoc_notStarted (1)
+pl Programmation_notStarted (1)
+pl RedactionTests_notStarted (1)
+pl redacteur (1)
+pl developpeur (2)
+pl machine (4)
+pl testeur (2)
+net developpement

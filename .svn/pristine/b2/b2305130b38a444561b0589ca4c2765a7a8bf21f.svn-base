@@ -1,0 +1,72 @@
+t 290.0 500.0 Conception_finish se 0 w n {} ne
+t 590.0 115.0 RedactionTests_finish 0 w n
+p 820.0 715.0 Conception_notStarted 1 n
+p 385.0 710.0 concepteur 0 n
+p 515.0 565.0 Conception_inProgress 0 n
+p 175.0 410.0 Conception_finished 0 n
+p 145.0 130.0 Programmation_started 0 n
+p 205.0 40.0 developpeur 2 n
+p 295.0 135.0 Programmation_inProgress 0 n
+t 770.0 370.0 RedactionDoc_finish n 0 w n {} ne
+p 785.0 75.0 RedactionTests_started 0 n
+t 800.0 190.0 RedactionTests_start n 0 w n {} ne
+p 875.0 105.0 RedactionTests_notStarted 1 n
+t 825.0 510.0 RedactionDoc_start se 0 w n {} ne
+p 1045.0 440.0 RedactionDoc_started 0 n
+p 945.0 365.0 RedactionDoc_notStarted 1 n
+p 810.0 430.0 RedactionDoc_inProgress 0 n
+t 400.0 25.0 Programmation_finish w 0 w n {} ne
+p 590.0 35.0 RedactionTests_finished 0 n
+p 495.0 60.0 Programmation_finished 0 n
+p 680.0 145.0 RedactionTests_inProgress 0 n
+p 635.0 190.0 testeur 2 n
+p 790.0 290.0 RedactionDoc_finished 0 n
+p 695.0 415.0 redacteur 1 n
+p 445.0 375.0 machine 4 n
+p 85.0 225.0 Programmation_notStarted 1 n
+p 1195.0 500.0 Conception_started 0 n
+t 825.0 655.0 Conception_start nw 0 w n {} ne
+t 170.0 245.0 Programmation_start sw 0 w n {} ne
+e RedactionTests_finish RedactionTests_finished 1 n
+e RedactionTests_finish machine 2 n
+e RedactionTests_finish testeur 1 n
+e Programmation_finished RedactionTests_finish ?1 n
+e RedactionTests_inProgress RedactionTests_finish 1 n
+e RedactionTests_start RedactionTests_started 1 n
+e RedactionTests_start RedactionTests_inProgress 1 n
+e Conception_started 0.2312400721 76.53103945 RedactionTests_start 0.9202919325 135.3756348 ?1 n
+e RedactionTests_notStarted RedactionTests_start 1 n
+e machine RedactionTests_start 2 n
+e testeur RedactionTests_start 1 n
+e Programmation_finish Programmation_finished 1 n
+e Programmation_finish developpeur 2 n
+e Programmation_finish machine 3 n
+e Programmation_inProgress Programmation_finish 1 n
+e Programmation_start Programmation_started 1 n
+e Programmation_start Programmation_inProgress 1 n
+e Conception_finished Programmation_start ?1 n
+e Programmation_notStarted Programmation_start 1 n
+e developpeur Programmation_start 2 n
+e machine Programmation_start 3 n
+e RedactionDoc_finish RedactionDoc_finished 1 n
+e RedactionDoc_finish machine 1 n
+e RedactionDoc_finish redacteur 1 n
+e RedactionDoc_inProgress RedactionDoc_finish 1 n
+e RedactionDoc_start RedactionDoc_started 1 n
+e RedactionDoc_start RedactionDoc_inProgress 1 n
+e Conception_started RedactionDoc_start ?1 n
+e RedactionDoc_notStarted RedactionDoc_start 1 n
+e machine RedactionDoc_start 1 n
+e redacteur RedactionDoc_start 1 n
+e Conception_finish Conception_finished 1 n
+e Conception_finish machine 2 n
+e Conception_finish concepteur 2 n
+e Conception_inProgress Conception_finish 1 n
+e Conception_start 0.04044521004 99.44376552 Conception_started 0.6778923076 84.52810184 1 n
+e Conception_start Conception_inProgress 1 n
+e Conception_notStarted Conception_start 1 n
+e machine Conception_start 2 n
+e concepteur Conception_start 2 n
+h developpement small
+
+

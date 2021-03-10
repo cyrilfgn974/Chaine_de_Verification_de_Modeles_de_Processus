@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fr.n7.eclipse.feature.simplePDL_1.0.0.202011031750.jar" id="fr.n7.eclipse.feature.simplePDL" version="1.0.0.202011031750"/>
+   <category-def name="N7 SimplePDL" label="N7 SimplePDL"/>
+</site>

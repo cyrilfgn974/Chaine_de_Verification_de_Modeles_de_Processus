@@ -1,0 +1,76 @@
+/**
+ */
+package petriNet;
+
+import org.eclipse.emf.common.util.EList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Node</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link petriNet.Node#getName <em>Name</em>}</li>
+ *   <li>{@link petriNet.Node#getLinksToSuccessor <em>Links To Successor</em>}</li>
+ *   <li>{@link petriNet.Node#getLinksToPredecessor <em>Links To Predecessor</em>}</li>
+ * </ul>
+ *
+ * @see petriNet.PetriNetPackage#getNode()
+ * @model
+ * @generated
+ */
+public interface Node extends PetriNetElement {
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see petriNet.PetriNetPackage#getNode_Name()
+	 * @model required="true"
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link petriNet.Node#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Links To Successor</b></em>' reference list.
+	 * The list contents are of type {@link petriNet.Arc}.
+	 * It is bidirectional and its opposite is '{@link petriNet.Arc#getPredecessor <em>Predecessor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Links To Successor</em>' reference list.
+	 * @see petriNet.PetriNetPackage#getNode_LinksToSuccessor()
+	 * @see petriNet.Arc#getPredecessor
+	 * @model opposite="predecessor"
+	 * @generated
+	 */
+	EList<Arc> getLinksToSuccessor();
+
+	/**
+	 * Returns the value of the '<em><b>Links To Predecessor</b></em>' reference list.
+	 * The list contents are of type {@link petriNet.Arc}.
+	 * It is bidirectional and its opposite is '{@link petriNet.Arc#getSuccessor <em>Successor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Links To Predecessor</em>' reference list.
+	 * @see petriNet.PetriNetPackage#getNode_LinksToPredecessor()
+	 * @see petriNet.Arc#getSuccessor
+	 * @model opposite="successor"
+	 * @generated
+	 */
+	EList<Arc> getLinksToPredecessor();
+
+} // Node

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="initLaunch" value="false"/>
+	<item key="org.eclipse.pde.ui.synchronizeFeatueEnvironment.mode" value="2"/>
+	<item key="OrganizeManifests.ExportedPackages.addMissing" value="false"/>
+	<item key="OrganizeManifests.ExportedPackages.makeInternal" value="false"/>
+	<item key="OrganizeManifests.ExportedPackages.packageFilter" value="*.internal*"/>
+	<item key="OrganizeManifests.ExportedPackages.removeUnresolved" value="false"/>
+	<item key="OrganizeManifests.calculateUses" value="false"/>
+	<item key="OrganizeManifests.RequireImport.modifyDep" value="false"/>
+	<item key="OrganizeManifests.RequireImport.resolve:markOptional" value="false"/>
+	<item key="OrganizeManifests.RequireImport.findRemoveUnused" value="false"/>
+	<item key="OrganizeManifests.AddDependencies" value="false"/>
+	<item key="OrganizeManifests.General.cleanup" value="false"/>
+	<item key="OrganizeManifests.General.cleanup.removeUselessFiles" value="false"/>
+	<item key="OrganizeManifests.Translation.nls" value="false"/>
+	<item key="OrganizeManifests.Translation.unusedKeys" value="false"/>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="org.eclipse.pde.ui.dialogs.FeatureSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="663"/>
+			<item key="DIALOG_Y_ORIGIN" value="149"/>
+			<item key="DIALOG_FONT_NAME" value="1|Ubuntu Mono|10.0|0|GTK|1|"/>
+		</section>
+	</section>
+	<section name="FeatureExportWizard">
+		<item key="exportType" value="1"/>
+		<item key="destination0" value="/home/cfiguin/Annee_2/sem_1/gls/miniprojet/livrables_v3/no_save_xtext"/>
+		<item key="destination1" value="/home/cfiguin/Annee_2/sem_1/gls/miniprojet/livrables_v3/no_save_xtext"/>
+		<item key="exportUpdate" value="true"/>
+		<item key="exportSource" value="false"/>
+		<item key="exportSourceFormat" value="Generate source bundles"/>
+		<item key="saveAsAnt" value="false"/>
+		<item key="qualifier" value="false"/>
+		<item key="qualifierName" value="202011031640"/>
+		<item key="allowBinaryCycles" value="true"/>
+		<item key="useWorkspaceCompiledClasses" value="false"/>
+		<item key="p2metadata" value="true"/>
+		<item key="create_categories" value="true"/>
+		<item key="category_file" value=""/>
+		<item key="signJAR" value="false"/>
+		<item key="jnlp" value="false"/>
+		<item key="siteURL" value=""/>
+		<item key="jre" value=""/>
+		<item key="destination2" value="/home/cfiguin/Annee_2/sem_1/gls/miniprojet/livrables_v3/nosave_totina"/>
+		<item key="destination3" value="/home/cfiguin/Annee_2/sem_1/gls/miniprojet/livrables_v3/nosave_petrinet"/>
+		<item key="destination4" value="/home/cfiguin/Annee_2/sem_1/gls/miniprojet/livrables_v3/nosave_todot"/>
+		<item key="destination5" value="/home/cfiguin/Annee_2/sem_1/gls/miniprojet/livrables_v3/nosave_tohtml"/>
+	</section>
+	<section name="targetStateView">
+	</section>
+	<section name="PDEFormActionManager">
+	</section>
+	<section name="RefactoringWizard.Organize Manifests">
+		<item key="width" value="1090"/>
+		<item key="height" value="610"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+	</section>
+	<section name="org.eclipse.pde.ui.dialogs.FilteredPluginArtifactsSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode/&gt;&#x0A;&lt;/History&gt;"/>
+		<item key="showExtensions" value="true"/>
+		<item key="showExtensionPoints" value="true"/>
+		<item key="showExportedPackages" value="true"/>
+		<item key="showFeatures" value="true"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="663"/>
+			<item key="DIALOG_Y_ORIGIN" value="181"/>
+			<item key="DIALOG_FONT_NAME" value="1|Ubuntu Mono|10.0|0|GTK|1|"/>
+		</section>
+	</section>
+	<section name="org.eclipse.pde.ui.PLUGIN_STATUS_DIALOG">
+		<item key="DIALOG_X_ORIGIN" value="760"/>
+		<item key="DIALOG_Y_ORIGIN" value="231"/>
+		<item key="DIALOG_WIDTH" value="406"/>
+		<item key="DIALOG_HEIGHT" value="383"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu Mono|10.0|0|GTK|1|"/>
+	</section>
+</section>

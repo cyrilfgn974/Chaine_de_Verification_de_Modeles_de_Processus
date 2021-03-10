@@ -1,0 +1,28 @@
+[] (Conception_notStarted \/ Conception_started);
+[] (RedactionDoc_notStarted \/ RedactionDoc_started);
+[] (Programmation_notStarted \/ Programmation_started);
+[] (RedactionTests_notStarted \/ RedactionTests_started);
+
+[] (Conception_notStarted \/ Conception_inProgress \/ Conception_finished);
+[] (RedactionDoc_notStarted \/ RedactionDoc_inProgress \/ RedactionDoc_finished);
+[] (Programmation_notStarted \/ Programmation_inProgress \/ Programmation_finished);
+[] (RedactionTests_notStarted \/ RedactionTests_inProgress \/ RedactionTests_finished);
+
+Conception_finished => [] Conception_finished;
+RedactionDoc_finished => [] RedactionDoc_finished;
+Programmation_finished => [] Programmation_finished;
+RedactionTests_finished => [] RedactionTests_finished;
+
+Conception_notStarted => () (Conception_notStarted \/ (Conception_started /\ Conception_inProgress));
+RedactionDoc_notStarted => () (RedactionDoc_notStarted \/ (RedactionDoc_started /\ RedactionDoc_inProgress));
+Programmation_notStarted => () (Programmation_notStarted \/ (Programmation_started /\ Programmation_inProgress));
+RedactionTests_notStarted => () (RedactionTests_notStarted \/ (RedactionTests_started /\ RedactionTests_inProgress));
+
+Conception_inProgress => () (Conception_finished \/ Conception_inProgress );
+
+RedactionDoc_inProgress => () (RedactionDoc_finished \/ RedactionDoc_inProgress );
+
+Programmation_inProgress => () (Programmation_finished \/ Programmation_inProgress );
+
+RedactionTests_inProgress => () (RedactionTests_finished \/ RedactionTests_inProgress );
+

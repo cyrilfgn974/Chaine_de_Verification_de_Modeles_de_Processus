@@ -1,0 +1,707 @@
+/**
+ */
+package PetriNet;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * @see PetriNet.PetriNetFactory
+ * @model kind="package"
+ * @generated
+ */
+public interface PetriNetPackage extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "PetriNet";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "http://www.example.org/PetriNet";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "PetriNet";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	PetriNetPackage eINSTANCE = PetriNet.impl.PetriNetPackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link PetriNet.impl.PetriNetImpl <em>Petri Net</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see PetriNet.impl.PetriNetImpl
+	 * @see PetriNet.impl.PetriNetPackageImpl#getPetriNet()
+	 * @generated
+	 */
+	int PETRI_NET = 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PETRI_NET__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Petrinetelement</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PETRI_NET__PETRINETELEMENT = 1;
+
+	/**
+	 * The number of structural features of the '<em>Petri Net</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PETRI_NET_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Petri Net</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PETRI_NET_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link PetriNet.impl.PetriNetElementImpl <em>Element</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see PetriNet.impl.PetriNetElementImpl
+	 * @see PetriNet.impl.PetriNetPackageImpl#getPetriNetElement()
+	 * @generated
+	 */
+	int PETRI_NET_ELEMENT = 1;
+
+	/**
+	 * The number of structural features of the '<em>Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PETRI_NET_ELEMENT_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PETRI_NET_ELEMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link PetriNet.impl.NodeImpl <em>Node</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see PetriNet.impl.NodeImpl
+	 * @see PetriNet.impl.PetriNetPackageImpl#getNode()
+	 * @generated
+	 */
+	int NODE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__NAME = PETRI_NET_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Links To Successor</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__LINKS_TO_SUCCESSOR = PETRI_NET_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Links To Predecessor</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__LINKS_TO_PREDECESSOR = PETRI_NET_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE_FEATURE_COUNT = PETRI_NET_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE_OPERATION_COUNT = PETRI_NET_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link PetriNet.impl.ArcImpl <em>Arc</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see PetriNet.impl.ArcImpl
+	 * @see PetriNet.impl.PetriNetPackageImpl#getArc()
+	 * @generated
+	 */
+	int ARC = 3;
+
+	/**
+	 * The feature id for the '<em><b>Tokens Nb</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARC__TOKENS_NB = PETRI_NET_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Read Only</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARC__READ_ONLY = PETRI_NET_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Predecessor</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARC__PREDECESSOR = PETRI_NET_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Successor</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARC__SUCCESSOR = PETRI_NET_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of structural features of the '<em>Arc</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARC_FEATURE_COUNT = PETRI_NET_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of operations of the '<em>Arc</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARC_OPERATION_COUNT = PETRI_NET_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link PetriNet.impl.PlaceImpl <em>Place</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see PetriNet.impl.PlaceImpl
+	 * @see PetriNet.impl.PetriNetPackageImpl#getPlace()
+	 * @generated
+	 */
+	int PLACE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE__NAME = NODE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Links To Successor</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE__LINKS_TO_SUCCESSOR = NODE__LINKS_TO_SUCCESSOR;
+
+	/**
+	 * The feature id for the '<em><b>Links To Predecessor</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE__LINKS_TO_PREDECESSOR = NODE__LINKS_TO_PREDECESSOR;
+
+	/**
+	 * The feature id for the '<em><b>Marking</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE__MARKING = NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Place</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE_FEATURE_COUNT = NODE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Place</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE_OPERATION_COUNT = NODE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link PetriNet.impl.TransitionImpl <em>Transition</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see PetriNet.impl.TransitionImpl
+	 * @see PetriNet.impl.PetriNetPackageImpl#getTransition()
+	 * @generated
+	 */
+	int TRANSITION = 5;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION__NAME = NODE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Links To Successor</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION__LINKS_TO_SUCCESSOR = NODE__LINKS_TO_SUCCESSOR;
+
+	/**
+	 * The feature id for the '<em><b>Links To Predecessor</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION__LINKS_TO_PREDECESSOR = NODE__LINKS_TO_PREDECESSOR;
+
+	/**
+	 * The number of structural features of the '<em>Transition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_FEATURE_COUNT = NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Transition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_OPERATION_COUNT = NODE_OPERATION_COUNT + 0;
+
+
+	/**
+	 * Returns the meta object for class '{@link PetriNet.PetriNet <em>Petri Net</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Petri Net</em>'.
+	 * @see PetriNet.PetriNet
+	 * @generated
+	 */
+	EClass getPetriNet();
+
+	/**
+	 * Returns the meta object for the attribute '{@link PetriNet.PetriNet#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see PetriNet.PetriNet#getName()
+	 * @see #getPetriNet()
+	 * @generated
+	 */
+	EAttribute getPetriNet_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link PetriNet.PetriNet#getPetrinetelement <em>Petrinetelement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Petrinetelement</em>'.
+	 * @see PetriNet.PetriNet#getPetrinetelement()
+	 * @see #getPetriNet()
+	 * @generated
+	 */
+	EReference getPetriNet_Petrinetelement();
+
+	/**
+	 * Returns the meta object for class '{@link PetriNet.PetriNetElement <em>Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Element</em>'.
+	 * @see PetriNet.PetriNetElement
+	 * @generated
+	 */
+	EClass getPetriNetElement();
+
+	/**
+	 * Returns the meta object for class '{@link PetriNet.Node <em>Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Node</em>'.
+	 * @see PetriNet.Node
+	 * @generated
+	 */
+	EClass getNode();
+
+	/**
+	 * Returns the meta object for the attribute '{@link PetriNet.Node#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see PetriNet.Node#getName()
+	 * @see #getNode()
+	 * @generated
+	 */
+	EAttribute getNode_Name();
+
+	/**
+	 * Returns the meta object for the reference list '{@link PetriNet.Node#getLinksToSuccessor <em>Links To Successor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Links To Successor</em>'.
+	 * @see PetriNet.Node#getLinksToSuccessor()
+	 * @see #getNode()
+	 * @generated
+	 */
+	EReference getNode_LinksToSuccessor();
+
+	/**
+	 * Returns the meta object for the reference list '{@link PetriNet.Node#getLinksToPredecessor <em>Links To Predecessor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Links To Predecessor</em>'.
+	 * @see PetriNet.Node#getLinksToPredecessor()
+	 * @see #getNode()
+	 * @generated
+	 */
+	EReference getNode_LinksToPredecessor();
+
+	/**
+	 * Returns the meta object for class '{@link PetriNet.Arc <em>Arc</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Arc</em>'.
+	 * @see PetriNet.Arc
+	 * @generated
+	 */
+	EClass getArc();
+
+	/**
+	 * Returns the meta object for the attribute '{@link PetriNet.Arc#getTokensNb <em>Tokens Nb</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tokens Nb</em>'.
+	 * @see PetriNet.Arc#getTokensNb()
+	 * @see #getArc()
+	 * @generated
+	 */
+	EAttribute getArc_TokensNb();
+
+	/**
+	 * Returns the meta object for the attribute '{@link PetriNet.Arc#isReadOnly <em>Read Only</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Read Only</em>'.
+	 * @see PetriNet.Arc#isReadOnly()
+	 * @see #getArc()
+	 * @generated
+	 */
+	EAttribute getArc_ReadOnly();
+
+	/**
+	 * Returns the meta object for the reference '{@link PetriNet.Arc#getPredecessor <em>Predecessor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Predecessor</em>'.
+	 * @see PetriNet.Arc#getPredecessor()
+	 * @see #getArc()
+	 * @generated
+	 */
+	EReference getArc_Predecessor();
+
+	/**
+	 * Returns the meta object for the reference '{@link PetriNet.Arc#getSuccessor <em>Successor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Successor</em>'.
+	 * @see PetriNet.Arc#getSuccessor()
+	 * @see #getArc()
+	 * @generated
+	 */
+	EReference getArc_Successor();
+
+	/**
+	 * Returns the meta object for class '{@link PetriNet.Place <em>Place</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Place</em>'.
+	 * @see PetriNet.Place
+	 * @generated
+	 */
+	EClass getPlace();
+
+	/**
+	 * Returns the meta object for the attribute '{@link PetriNet.Place#getMarking <em>Marking</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Marking</em>'.
+	 * @see PetriNet.Place#getMarking()
+	 * @see #getPlace()
+	 * @generated
+	 */
+	EAttribute getPlace_Marking();
+
+	/**
+	 * Returns the meta object for class '{@link PetriNet.Transition <em>Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Transition</em>'.
+	 * @see PetriNet.Transition
+	 * @generated
+	 */
+	EClass getTransition();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	PetriNetFactory getPetriNetFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link PetriNet.impl.PetriNetImpl <em>Petri Net</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see PetriNet.impl.PetriNetImpl
+		 * @see PetriNet.impl.PetriNetPackageImpl#getPetriNet()
+		 * @generated
+		 */
+		EClass PETRI_NET = eINSTANCE.getPetriNet();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PETRI_NET__NAME = eINSTANCE.getPetriNet_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Petrinetelement</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PETRI_NET__PETRINETELEMENT = eINSTANCE.getPetriNet_Petrinetelement();
+
+		/**
+		 * The meta object literal for the '{@link PetriNet.impl.PetriNetElementImpl <em>Element</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see PetriNet.impl.PetriNetElementImpl
+		 * @see PetriNet.impl.PetriNetPackageImpl#getPetriNetElement()
+		 * @generated
+		 */
+		EClass PETRI_NET_ELEMENT = eINSTANCE.getPetriNetElement();
+
+		/**
+		 * The meta object literal for the '{@link PetriNet.impl.NodeImpl <em>Node</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see PetriNet.impl.NodeImpl
+		 * @see PetriNet.impl.PetriNetPackageImpl#getNode()
+		 * @generated
+		 */
+		EClass NODE = eINSTANCE.getNode();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NODE__NAME = eINSTANCE.getNode_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Links To Successor</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference NODE__LINKS_TO_SUCCESSOR = eINSTANCE.getNode_LinksToSuccessor();
+
+		/**
+		 * The meta object literal for the '<em><b>Links To Predecessor</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference NODE__LINKS_TO_PREDECESSOR = eINSTANCE.getNode_LinksToPredecessor();
+
+		/**
+		 * The meta object literal for the '{@link PetriNet.impl.ArcImpl <em>Arc</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see PetriNet.impl.ArcImpl
+		 * @see PetriNet.impl.PetriNetPackageImpl#getArc()
+		 * @generated
+		 */
+		EClass ARC = eINSTANCE.getArc();
+
+		/**
+		 * The meta object literal for the '<em><b>Tokens Nb</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARC__TOKENS_NB = eINSTANCE.getArc_TokensNb();
+
+		/**
+		 * The meta object literal for the '<em><b>Read Only</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARC__READ_ONLY = eINSTANCE.getArc_ReadOnly();
+
+		/**
+		 * The meta object literal for the '<em><b>Predecessor</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARC__PREDECESSOR = eINSTANCE.getArc_Predecessor();
+
+		/**
+		 * The meta object literal for the '<em><b>Successor</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARC__SUCCESSOR = eINSTANCE.getArc_Successor();
+
+		/**
+		 * The meta object literal for the '{@link PetriNet.impl.PlaceImpl <em>Place</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see PetriNet.impl.PlaceImpl
+		 * @see PetriNet.impl.PetriNetPackageImpl#getPlace()
+		 * @generated
+		 */
+		EClass PLACE = eINSTANCE.getPlace();
+
+		/**
+		 * The meta object literal for the '<em><b>Marking</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PLACE__MARKING = eINSTANCE.getPlace_Marking();
+
+		/**
+		 * The meta object literal for the '{@link PetriNet.impl.TransitionImpl <em>Transition</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see PetriNet.impl.TransitionImpl
+		 * @see PetriNet.impl.PetriNetPackageImpl#getTransition()
+		 * @generated
+		 */
+		EClass TRANSITION = eINSTANCE.getTransition();
+
+	}
+
+} //PetriNetPackage

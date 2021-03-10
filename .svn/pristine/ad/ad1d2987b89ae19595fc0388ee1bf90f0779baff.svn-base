@@ -1,0 +1,28 @@
+import 'SimplePDL.ecore'
+
+package simplepdl
+
+
+context Process    --contraintes sur le processus
+inv nomValide('nom Invalide: ' + self.name):
+	self.name.size() >=2
+
+inv compositionNom('Nom invalide: ' + self.name):    -- le nom d’une activité ne doit être composé que de lettres, chiffres ou soulignés, un chiffre ne peut pas être première position.
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+inv nomUnique : self.processelement   
+	->select(pe | pe.oclIsKindOf(WorkDefinition))
+	->collect(pe | pe.oclAsType(WorkDefinition))
+	->forAll(w1, w2 | w1 = w2 or w1.name <> w2.name)
+
+context WorkSequence   -- non reflexivité de deux dépendances
+inv nonReflexif : self.predecessor <> self.successor
+
+-- Exo 2 contraintes sur les ressources
+context Ressource
+inv nomValide('Nom invalide: ' + self.nom):   -- taille du nom de la ressource au moins 2 caractères
+	self.nom.size() >= 2   
+inv compositionNom('Nom invalide:  ' + self.nom):   -- contraintes sur le nom de l'activité
+	self.nom.matches('[A-Za-z_][A-Za-z0-9_]*')
+	
+endpackage

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fr.n7.eclipse.feature.petriNet_1.0.0.202011111836.jar" id="fr.n7.eclipse.feature.petriNet" version="1.0.0.202011111836">
+      <category name="N7 CAT PETRINET"/>
+   </feature>
+   <category-def name="N7 CAT PETRINET" label="N7 CAT PETRINET"/>
+</site>

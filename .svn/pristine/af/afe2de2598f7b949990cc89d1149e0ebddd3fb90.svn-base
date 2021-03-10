@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PetriNet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PetriNet="http://www.example.org/PetriNet">
+  <petrinetelement xsi:type="PetriNet:Place" name="Hiver" linksToSuccessor="//@petrinetelement.8" linksToPredecessor="//@petrinetelement.15"/>
+  <petrinetelement xsi:type="PetriNet:Place" name="Printemps" linksToSuccessor="//@petrinetelement.10" linksToPredecessor="//@petrinetelement.9"/>
+  <petrinetelement xsi:type="PetriNet:Place" name="Ete" linksToSuccessor="//@petrinetelement.12" linksToPredecessor="//@petrinetelement.11"/>
+  <petrinetelement xsi:type="PetriNet:Place" name="Automne" linksToSuccessor="//@petrinetelement.14" linksToPredecessor="//@petrinetelement.13"/>
+  <petrinetelement xsi:type="PetriNet:Transition" name="hiverToPrintemps" linksToSuccessor="//@petrinetelement.9" linksToPredecessor="//@petrinetelement.8"/>
+  <petrinetelement xsi:type="PetriNet:Transition" name="printempsToEte" linksToSuccessor="//@petrinetelement.11" linksToPredecessor="//@petrinetelement.10"/>
+  <petrinetelement xsi:type="PetriNet:Transition" name="eteToAutomne" linksToSuccessor="//@petrinetelement.13" linksToPredecessor="//@petrinetelement.12"/>
+  <petrinetelement xsi:type="PetriNet:Transition" name="automneToHiver" linksToSuccessor="//@petrinetelement.15" linksToPredecessor="//@petrinetelement.14"/>
+  <petrinetelement xsi:type="PetriNet:Arc" tokensNb="1" predecessor="//@petrinetelement.0" successor="//@petrinetelement.4"/>
+  <petrinetelement xsi:type="PetriNet:Arc" tokensNb="1" predecessor="//@petrinetelement.4" successor="//@petrinetelement.1"/>
+  <petrinetelement xsi:type="PetriNet:Arc" tokensNb="1" predecessor="//@petrinetelement.1" successor="//@petrinetelement.5"/>
+  <petrinetelement xsi:type="PetriNet:Arc" tokensNb="1" predecessor="//@petrinetelement.5" successor="//@petrinetelement.2"/>
+  <petrinetelement xsi:type="PetriNet:Arc" tokensNb="1" predecessor="//@petrinetelement.2" successor="//@petrinetelement.6"/>
+  <petrinetelement xsi:type="PetriNet:Arc" tokensNb="1" predecessor="//@petrinetelement.6" successor="//@petrinetelement.3"/>
+  <petrinetelement xsi:type="PetriNet:Arc" tokensNb="1" predecessor="//@petrinetelement.3" successor="//@petrinetelement.7"/>
+  <petrinetelement xsi:type="PetriNet:Arc" tokensNb="1" predecessor="//@petrinetelement.7" successor="//@petrinetelement.0"/>
+</PetriNet:PetriNet>

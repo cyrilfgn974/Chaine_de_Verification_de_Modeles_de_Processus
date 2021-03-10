@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fr.n7.eclipse.feature.xtext.pdl_1.0.0.202011111857.jar" id="fr.n7.eclipse.feature.xtext.pdl" version="1.0.0.202011111857"/>
+</site>

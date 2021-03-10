@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.2.0'?>
+<repository name='file:/home/cfiguin/Annee_2/sem_1/gls/miniprojet/livrables_v3/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1605117491127'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <units size='5'>
+    <unit id='fr.n7.eclipse.feature.xtext.pdl.feature.jar' version='1.0.0.202011111858'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Pdl Xtext'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.n7.eclipse.feature.xtext.pdl.feature.jar' version='1.0.0.202011111858'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='fr.n7.eclipse.feature.xtext.pdl' version='1.0.0.202011111858'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='fr.n7.eclipse.feature.xtext.pdl' version='1.0.0.202011111858'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='fr.n7.simplepdl.txt.pdl.ui' version='1.0.0.202011111858' generation='2'>
+      <update id='fr.n7.simplepdl.txt.pdl.ui' range='[0.0.0,1.0.0.202011111858)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='fr.n7.simplepdl.txt.pdl.ui'/>
+        <property name='org.eclipse.equinox.p2.provider' value='My Company'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.n7.simplepdl.txt.pdl.ui' version='1.0.0.202011111858'/>
+        <provided namespace='osgi.bundle' name='fr.n7.simplepdl.txt.pdl.ui' version='1.0.0.202011111858'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.ui.contentassist' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.ui.quickfix' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.pdl.ui.internal' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='fr.n7.simplepdl.txt.pdl.ui' version='1.0.0.202011111858'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='15'>
+        <required namespace='osgi.bundle' name='fr.n7.simplepdl.txt.pdl' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='fr.n7.simplepdl.txt.pdl.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='fr.n7.simplePDL' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.shared' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.codetemplates.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='3.5.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.5.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.compare' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.builder' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='2.14.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtend.lib' range='2.14.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='fr.n7.simplepdl.txt.pdl.ui' version='1.0.0.202011111858'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: fr.n7.simplepdl.txt.pdl.ui; singleton:=true&#xA;Bundle-Version: 1.0.0.202011111858
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='fr.n7.simplepdl.txt.pdl.ide' version='1.0.0.202011111858' generation='2'>
+      <update id='fr.n7.simplepdl.txt.pdl.ide' range='[0.0.0,1.0.0.202011111858)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='fr.n7.simplepdl.txt.pdl.ide'/>
+        <property name='org.eclipse.equinox.p2.provider' value='My Company'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.n7.simplepdl.txt.pdl.ide' version='1.0.0.202011111858'/>
+        <provided namespace='osgi.bundle' name='fr.n7.simplepdl.txt.pdl.ide' version='1.0.0.202011111858'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.ide.contentassist.antlr.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.ide.contentassist.antlr' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='fr.n7.simplepdl.txt.pdl.ide' version='1.0.0.202011111858'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='fr.n7.simplepdl.txt.pdl' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='fr.n7.simplePDL' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.antlr.runtime' range='[3.2.0,3.2.1)'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='fr.n7.simplepdl.txt.pdl.ide' version='1.0.0.202011111858'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: fr.n7.simplepdl.txt.pdl.ide; singleton:=true&#xA;Bundle-Version: 1.0.0.202011111858
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='fr.n7.eclipse.feature.xtext.pdl.feature.group' version='1.0.0.202011111858' singleton='false'>
+      <update id='fr.n7.eclipse.feature.xtext.pdl.feature.group' range='[0.0.0,1.0.0.202011111858)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Pdl Xtext'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.n7.eclipse.feature.xtext.pdl.feature.group' version='1.0.0.202011111858'/>
+      </provides>
+      <requires size='4'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='fr.n7.simplepdl.txt.pdl.ui' range='[1.0.0.202011111858,1.0.0.202011111858]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='fr.n7.simplepdl.txt.pdl' range='[1.0.0.202011111858,1.0.0.202011111858]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='fr.n7.simplepdl.txt.pdl.ide' range='[1.0.0.202011111858,1.0.0.202011111858]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='fr.n7.eclipse.feature.xtext.pdl.feature.jar' range='[1.0.0.202011111858,1.0.0.202011111858]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='fr.n7.simplepdl.txt.pdl' version='1.0.0.202011111858' generation='2'>
+      <update id='fr.n7.simplepdl.txt.pdl' range='[0.0.0,1.0.0.202011111858)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='fr.n7.simplepdl.txt.pdl'/>
+        <property name='org.eclipse.equinox.p2.provider' value='My Company'/>
+      </properties>
+      <provides size='13'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='fr.n7.simplepdl.txt.pdl' version='1.0.0.202011111858'/>
+        <provided namespace='osgi.bundle' name='fr.n7.simplepdl.txt.pdl' version='1.0.0.202011111858'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.parser.antlr.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.serializer' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.formatting2' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.validation' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.services' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.scoping' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.generator' version='0.0.0'/>
+        <provided namespace='java.package' name='fr.n7.simplepdl.txt.parser.antlr' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='fr.n7.simplepdl.txt.pdl' version='1.0.0.202011111858'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='fr.n7.simplePDL' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.5.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='2.14.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.util' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtend.lib' range='2.14.0'/>
+        <required namespace='osgi.bundle' name='org.antlr.runtime' range='[3.2.0,3.2.1)'/>
+        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='fr.n7.simplepdl.txt.pdl' version='1.0.0.202011111858'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: fr.n7.simplepdl.txt.pdl; singleton:=true&#xA;Bundle-Version: 1.0.0.202011111858
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>

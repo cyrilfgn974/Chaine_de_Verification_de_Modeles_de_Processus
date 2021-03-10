@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fr.n7.eclipse.feature.totina_1.0.0.202011111243.jar" id="fr.n7.eclipse.feature.totina" version="1.0.0.202011111243">
+      <category name="N7 CAT TINA"/>
+   </feature>
+   <category-def name="N7 CAT TINA" label="N7 CAT TINA"/>
+</site>
